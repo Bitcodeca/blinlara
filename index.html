@@ -69,7 +69,7 @@
                 </div>
             </nav>
         </div>
-        <div class="carousel js-flickity" data-flickity-options='{ "wrapAround": "true", "autoPlay": "2500", "cellSelector": ".carousel-cell"}'>
+        <div class="carousel js-flickity" data-flickity-options='{ "wrapAround": "true", "autoPlay": "2500", "cellSelector": ".carousel-cell", "setGallerySize": false, "pageDots": false}'>
             <div class="static-banner"><img src="img/logoblinlara.png" class="img-responsive"><br><i class="proteccionsinlimites">PROTECCIÓN SIN LÍMITES</i></div>
             <div class="carousel-cell"><img src="img/bg6.jpg"></div>
             <div class="carousel-cell"><img src="img/bg2.jpg"></div>
@@ -86,9 +86,25 @@
                 <div class="col-md-12">
                     <p class="justify">En BLINLARA somos expertos en servicio y asesoría en blindaje de autos en Venezuela. Nuestros servicios están dirigidos a usuarios particulares y/o corporativos expuestos a los riesgos de seguridad vividos en zonas de alto riesgo en Venezuela. Nuestro compromiso es satisfacer las necesidades de protección específica para cada uno de nuestros clientes garantizando su seguridad. </p>
                     <p class="justify">Nuestra misión es la aplicación de tecnologías y de las mejores prácticas de blindaje en Venezuela, encaminadas a cumplir los más altos requerimientos de calidad y protección para nuestros usuarios, ofreciendo siempre el mejor portafolio de productos en blindaje en Venezuela.</p>
-                    <div class="center-align margintop25 marginbot10">
-                        <a href="nosotros.html" class="waves-effect waves-light btn">Ver más</a>
-                    </div>
+                </div>
+            </div>
+            <div class="row center-align margintop25">
+                <div class="col-xs-12 col-sm-4">
+                    <div class="counter"><i class="fa fa-shield lineheight60" aria-hidden="true"></i> <div class="counternum">3</div>+</div>
+                    <h3 class="letraroja fontbolder">AÑOS SIRVIENDO</h3>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="counter"><i class="fa fa-users lineheight60" aria-hidden="true"></i> <div class="counternum">131</div>+</div>
+                    <h3 class="letraroja fontbolder">CLIENTES SATISFECHOS</h3>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="counter"><i class="fa fa-heart lineheight60" aria-hidden="true"></i> <div class="counternum">436</div>+</div>
+                    <h3 class="letraroja fontbolder">VIDAS PROTEGIDAS</h3>
+                </div>
+            </div>
+            <div class="row">               
+                <div class="center-align margintop25 marginbot10">
+                    <a href="nosotros.html" class="waves-effect waves-light btn">Saber más</a>
                 </div>
             </div>
         </div>
@@ -207,11 +223,19 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
         <script src="https://npmcdn.com/flickity@1.2/dist/flickity.pkgd.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
         <script>
             new WOW().init();
              $(document).ready(function(){
                 $(".button-collapse").sideNav();
                 $('.parallax').parallax();
+            });
+            jQuery(document).ready(function( $ ) {
+                $('.counternum').counterUp({
+                    delay: 10, // the delay time in ms
+                    time: 2000 // the speed time in ms
+                });
             });
         </script>
     </body>
