@@ -20,6 +20,8 @@
             window.addEventListener("load", function(){
                 var load_screen = document.getElementById("load_screen");
                 $(load_screen).hide('slow', function(){ document.body.removeChild(load_screen); });
+                var $carousel = $('.gallery-main').flickity();
+                $carousel.flickity('reloadCells');
             });
         </script>
     </head>
