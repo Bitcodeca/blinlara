@@ -17,31 +17,8 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/timeline.css">
 	    <script src="js/modernizr.js"></script>
-        <script>
-            window.addEventListener("load", function(){
-                var load_screen = document.getElementById("load_screen");
-                $(load_screen).hide('slow', function(){ document.body.removeChild(load_screen); });
-            });
-        </script>
     </head>
     <body>
-        <div id="load_screen">
-            <div id="loading">
-                <div class="preloader-wrapper active">
-                    <div class="spinner-layer spinner-red-only">
-                        <div class="circle-clipper left">
-                            <div class="circle"></div>
-                        </div>
-                        <div class="gap-patch">
-                            <div class="circle"></div>
-                        </div>
-                        <div class="circle-clipper right">
-                            <div class="circle"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="navbar-fixed">
             <nav>
                 <div class="nav-wrapper grey darken-4 z-depth-1">
@@ -86,7 +63,7 @@
                     </div> <!-- cd-timeline-img -->
 
                     <div class="cd-timeline-content z-depth-1 hoverable">
-                        <h2>NIVEL 2</h2>
+                        <h2>NIVEL II</h2>
                         <p class="justify">La composición del blindaje, es aramida, y el peso extra es de 90 a 110 kg. La estabilidad no sufre alteraciones y está indicado para vehículos pequeños.</p>
                     </div> <!-- cd-timeline-content -->
                 </div> <!-- cd-timeline-block -->
@@ -97,7 +74,7 @@
                     </div> <!-- cd-timeline-img -->
 
                     <div class="cd-timeline-content z-depth-1 hoverable">
-                        <h2>NIVEL 3</h2>
+                        <h2>NIVEL III</h2>
                         <p class="justify">La composición del blindaje es aramida o kevlar, y acero balístico, y el peso extra es de 240 a 290 kg. (el equivalente a dos personas, pero con el peso mejor distribuido). La estabilidad no sufre alteraciones y está indicado para vehículos de tamaño mediano, o grande.</p>
                     </div> <!-- cd-timeline-content -->
                 </div> <!-- cd-timeline-block -->
@@ -108,7 +85,7 @@
                     </div> <!-- cd-timeline-img -->
 
                     <div class="cd-timeline-content z-depth-1 hoverable">
-                        <h2>NIVEL 4</h2>
+                        <h2>NIVEL IV</h2>
                         <p class="justify">El espesor de los vidrios es de 57 mm. La composición es: acero balístico, aluminio, kevlar y dyneema, y el peso extra es de 580 a 680kg. La estabilidad no sufre alteraciones, en este nivel de blindaje, la suspensión es reforzada para mantener la integridad del vehículo. Este reforzamiento dependerá del tipo de vehículo a ser trabajado. Esta indicado para vehículos grandes.</p>
                     </div> <!-- cd-timeline-content -->
                 </div> <!-- cd-timeline-block -->
@@ -119,7 +96,7 @@
                     </div> <!-- cd-timeline-img -->
 
                     <div class="cd-timeline-content z-depth-1 hoverable">
-                        <h2>NIVEL 5</h2>
+                        <h2>NIVEL V</h2>
                         <p class="justify">El espesor de los vidrios es de 78 mm. La composición del blindaje es: aceros especiales, aluminio, aramida o kevlar, dyneema y cerámicas, y el peso extra es de 1300kg. La estabilidad y el desempeño no sufren alteraciones, en este nivel de blindaje, la suspensión es reforzada, los frenos y en algunos vehículos el motor es reforzado para mayor rendimiento y comfort. Este nivel está indicado para vehículos grandes.</p>
                     </div> <!-- cd-timeline-content -->
                 </div> <!-- cd-timeline-block -->
@@ -130,7 +107,7 @@
                     </div> <!-- cd-timeline-img -->
 
                     <div class="cd-timeline-content z-depth-1 hoverable">
-                        <h2>NIVEL 6</h2>
+                        <h2>NIVEL VI</h2>
                         <p class="justify">	Soporta fusiles de asalto hasta 762 x 63 AP.</p>
                     </div> <!-- cd-timeline-content -->
                 </div> <!-- cd-timeline-block -->
@@ -160,7 +137,7 @@
                     </div>
                     <div class="col-xs-6 col-sm-4 col-md-12">
                         <a href="#kevlar" data-index="perimetrodeltecho" class="waves-effect">
-                            <h3 class="letracarroblindado">PERÍMETRO DEL TECHO</h3>
+                            <h3 class="letracarroblindado">CORONA</h3>
                         </a>
                     </div>
                     <div class="col-xs-6 col-sm-4 col-md-12">
@@ -175,17 +152,17 @@
                     </div>
                     <div class="col-xs-6 col-sm-4 col-md-12">
                         <a href="#ballistic" data-index="postesabcd" class="waves-effect">
-                            <h3 class="letracarroblindado">POSTES ABCD</h3>
+                            <h3 class="letracarroblindado">PARALES</h3>
                         </a>
                     </div>
                     <div class="col-xs-12 col-sm-4 col-md-12">
                         <a href="#ballistic" data-index="salpicaderas" class="waves-effect">
-                            <h3 class="letracarroblindado">SALPICADERAS</h3>
+                            <h3 class="letracarroblindado">GUARDAFANGOS</h3>
                         </a>
                     </div>
                     <div class="col-xs-6 col-sm-4 col-md-12">
                         <a href="#ballistic" data-index="runflats" class="waves-effect">
-                            <h3 class="letracarroblindado">RUNFLATS</h3>
+                            <h3 class="letracarroblindado">NEUMÁTICOS</h3>
                         </a>
                     </div>
                     <div class="col-xs-6 col-sm-4 col-md-12">
@@ -230,16 +207,18 @@
 	    </div>
         
         <!--/////////////////////////////// FOOTER //////////////////////////////////////////-->
-        <div class="container-fluid ">
-            <div class="row center-align marginbot0 margintop10 wow fadeIn">
+        <div class="container-fluid wow fadeIn">
+            <div class="row center-align marginbot0 margintop10">
                 <hr class="style17">
             </div>
-            <div class="row wow fadeIn">
-                <div class="col-xs-12">
+            <div class="row">
+                <div class="col-xs-12 wow fadeIn">
                     <div class="center-align">
-                        <img src="img/ermotors.png" class="marginright25 dropshadow">
-                        <img src="img/blinlara.png" class="marginright25 marginleft25 dropshadow">
-                        <img src="img/construcer.png" class="marginleft25 dropshadow">
+                        <img src="img/viper.png" class="marginright25 dropshadow">
+                        <img src="img/ermotors.png" class="marginright25 marginleft25 dropshadow"><br class="showxs">
+                        <img src="img/blinlara.png" class="marginright25 marginleft25 dropshadow"><br class="showxs">
+                        <img src="img/construcer.png" class="marginright25 marginleft25 dropshadow">
+                        <img src="img/globalstore4x4.png" class="marginleft25 dropshadow">
                     </div>
                 </div>
             </div>
