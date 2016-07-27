@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
-    <body>
+    <body ng-app="contactApp">
         <div class="navbar-fixed">
             <nav>
                 <div class="nav-wrapper grey darken-4 z-depth-1">
@@ -63,7 +63,7 @@
             <div class="row">
                 <div class="col-sm-6">
                     <h3 class="">¡Síguenos!</h3>
-                    <p class="justify">¿Tienes Alguna Duda de un Proyecto, Nuestro Proceso o Simplemente Curioso de Qué Hay de Nuevo Esta Semana? ¡Dejanos Una nota o Llámanos! Estaremos Felices de Contestar Todas Sus Preguntas.</p>
+                    <p class="justify">¿Interesado en nuestros servicios de blindaje? ¡Escríbenos! Nuestros profesionales están atentos para contestar todas tus preguntas.</p>
                     <div class="center-align">
                         <h4><a href="https://www.instagram.com/blinlara/" target="_blank"  class="black-text"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i> @BLINLARA  </a> <br class="showxs">
                         <a href="https://www.facebook.com/blca26052016" target="_blank" class="black-text"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>  BLINLARA_CA  </a> <br class="showxs">
@@ -72,24 +72,30 @@
                 </div>
                 <div class="col-sm-6">
                     <h3 class="">Permítanos atenderle</h3>
-                    <div class="input-field">
-                        <input id="last_name" type="text" class="validate">
-                        <label for="last_name">Nombre</label>
-                    </div>
-                    <div class="input-field">
-                        <input id="last_name" type="text" class="validate">
-                        <label for="last_name">Apellido</label>
-                    </div>
-                    <div class="input-field">
-                        <input id="last_name" type="text" class="validate">
-                        <label for="last_name">Teléfono</label>
-                    </div>
-                    <div class="input-field">
-                        <textarea id="textarea1" class="materialize-textarea"></textarea>
-                        <label for="textarea1">Mensaje</label>
-                    </div>
-                    <div class="center-align margintop25 marginbot10">
-                        <a href="#!" class="waves-effect waves-light btn">ENVIAR</a>
+
+                    <div ng-controller="ContactController">
+                        <form ng-submit="submit(contactform)" name="contactform" method="post" role="form">
+                            <span class="input-field" ng-class="{ 'has-error': contactform.nombre.$invalid && submitted }">
+                                <input id="nombre" type="text" class="validate" ng-model="formData.nombre" >
+                                <label for="nombre">Nombre</label>
+                            </span>
+                            <span class="input-field" ng-class="{ 'has-error': contactform.email.$invalid && submitted }">
+                                <input id="email" type="text" class="validate" ng-model="formData.email">
+                                <label for="email">Email</label>
+                            </span>
+                            <span class="input-field" ng-class="{ 'has-error': contactform.telefono.$invalid && submitted }">
+                                <input id="telefono" type="text" class="validate" ng-model="formData.telefono">
+                                <label for="telefono">Teléfono</label>
+                            </span>
+                            <div class="input-field" ng-class="{ 'has-error': contactform.message.$invalid && submitted }">
+                                <textarea id="message" class="materialize-textarea" ng-model="formData.message"></textarea>
+                                <label for="message">Mensaje</label>
+                            </div>
+                            <div class="center-align margintop25 marginbot10">
+                                <button class="waves-effect waves-light btn"  type="submit" ng-disabled="submitButtonDisabled">ENVIAR</button>
+                            </div>
+                        </form>
+                        <p ng-class="result" style="padding: 15px; margin: 0;">{{ resultMessage }}</p>
                     </div>
                 </div>
             </div>
@@ -152,6 +158,9 @@
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+        <script src="app.js"></script>
+        <script src="controllers.js"></script>
         <script>
             new WOW().init();
              $(document).ready(function(){

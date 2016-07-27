@@ -122,7 +122,7 @@ input[type=text]:focus:not([readonly])+label { color:#400C0D; }
 .input-field label.active {font-size: 1em;}
 textarea.materialize-textarea:focus:not([readonly]){ border-bottom: 1px solid #400C0D; box-shadow: 0 1px 0 0 #400C0D; }
 textarea.materialize-textarea:focus:not([readonly])+label{color:#400C0D;}
-.input-field label {  font-size: 1.2rem; font-weight: bolder; }
+.input-field label {  font-size: 1.5rem; font-weight: bolder; margin-top:-15px; }
 .counter{ font-size: 4em;display: inline-flex;}
 .fontbolder {font-weight: bolder;}
 .lineheight60 {line-height: 60px;}
@@ -131,6 +131,8 @@ textarea.materialize-textarea:focus:not([readonly])+label{color:#400C0D;}
 .textbanner h3 { background-color: rgba(172,6,6,0.7); color: #fff; display: inline; padding: 4px 0px 0px 25px; margin: 0; }
 .textbanner i {padding: 4px 0; color: #fff; display: inline; padding: 4px 0px 0px 25px; margin: 0; }
 .textbanner h3 strong, .textbanner h3 strong i { position: relative; left: -10px; }
+input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea { font-size: 1.5rem; }
+
 
 @media (max-width:1080px){
     nav ul a { font-family: 'Raleway', sans-serif; font-size: 1.1em; letter-spacing: 1px; }
