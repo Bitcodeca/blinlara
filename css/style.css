@@ -28,6 +28,7 @@ p { font-family: 'Source Sans Pro', sans-serif; font-size: 1.45em; }
 .letraroja { color: #ac0606; }
 .letranegra {color: #212121;}
 .font16{font-size: 1.6em;}
+.font19{font-size: 1.9em;}
 .rayado { border-bottom: 2px solid #ac0606; display: inline-block; }
 .height100 { height: 100%; }
 .width75p { width: 75%; }
