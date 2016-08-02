@@ -133,7 +133,8 @@ textarea.materialize-textarea:focus:not([readonly])+label{color:#400C0D;}
 .textbanner i {padding: 4px 0; color: #fff; display: inline; padding: 4px 0px 0px 25px; margin: 0; }
 .textbanner h3 strong, .textbanner h3 strong i { position: relative; left: -10px; }
 input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea { font-size: 1.5rem; }
-
+#carro div {-webkit-transition: 0.1s;-moz-transition: 0.1s; -o-transition: 0.1s; -ms-transition: 0.1s; transition: 0.1s;}
+.collapsible-header h3 { font-family: 'Source Sans Pro', sans-serif;}
 
 @media (max-width:1080px){
     nav ul a { font-family: 'Raleway', sans-serif; font-size: 1.1em; letter-spacing: 1px; }
