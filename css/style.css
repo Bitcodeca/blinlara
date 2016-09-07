@@ -164,5 +164,9 @@ input:not([type]), input[type=text], input[type=password], input[type=email], in
     .showxs { display: block; }
     .textbanner h3 strong, .textbanner h3 strong i { left: 0px;}
     .textbanner h3 { padding: 4px 0px 0px 0px; }
+    .static-banner { width: 80%; }
     /*.parallax img { left: 150%; }*/
+}
+@media (max-width:320px){
+    .static-banner { width: 100%; }
 }
